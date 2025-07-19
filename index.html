@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shireesha Bogireddy - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="photo-container"></div>
+      <h1>Shireesha Bogireddy</h1>
+      <p>
+        📞 +91-917075269235<br />
+        📧 <a href="mailto:bogireddyshireesha@gmail.com">bogireddyshireesha@gmail.com</a><br />
+        🔗 <a href="https://linkedin.com/in/shireeshabogireddy" target="_blank">LinkedIn</a>
+      </p>
+    </header>
+    <nav class="section-menu">
+      <ul>
+        <li><a href="#career">Career Objective</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="career">
+        <h2>Career Objective</h2>
+        <p>Aspiring software developer with a strong foundation in Java and frontend technologies, seeking to contribute to a dynamic development team. Passionate about building efficient, scalable solutions and continuously improving skills in full-stack development.</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech – Computer Science and Engineering</strong>, Sai Rajeswari Institute Of Technology (2021–Present) – CGPA: 8.4 / 10.0</li>
+          <li><strong>Intermediate – MPC</strong>, Venkat Ram Junior College (2019–2021) – 89.9%</li>
+          <li><strong>SSC</strong>, Siva Surya High School (2018–2019) – CGPA: 9.8 / 10.0</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <h3>An Advanced Approach for Detecting Behavior-Based Intranet Attacks</h3>
+        <ul>
+          <li>Detected intranet attack patterns using machine learning.</li>
+          <li>Analyzed network traffic and system logs to classify behavioral anomalies.</li>
+          <li><strong>Technologies used:</strong> Python, Flask</li>
+        </ul>
+      </section>
+
+      <section id="internship">
+        <h2>Internship Experience</h2>
+        <h3>Full Stack Java Intern – EXCELR (16 Weeks)</h3>
+        <ul>
+          <li>Developed Online Bookstore Management System using Java.</li>
+          <li>Worked on both frontend and backend development.</li>
+          <li>Connected application with database for real-time insights.</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Languages & Technologies:</strong> Java, HTML, CSS, MySQL, Python, Flask</li>
+          <li><strong>Soft Skills:</strong> Leadership, Communication, Collaboration</li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <h2>Languages Known</h2>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Telugu</li>
+        </ul>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Solving the Rubik’s Cube</li>
+          <li>Travelling and exploring new places</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shireesha Bogireddy. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    const photo = document.createElement("img");
+    photo.src = "profile.jpg"; // Ensure profile.jpg is in the same folder
+    photo.alt = "Shireesha Bogireddy";
+    photo.className = "profile-photo";
+    document.getElementById("photo-container").appendChild(photo);
+    
+  
+
+
+      
+  const sectionLinks = document.querySelectorAll('.section-menu a');
+  const sections = document.querySelectorAll('main section');
+
+  sectionLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Remove previous highlight
+      sections.forEach(sec => sec.classList.remove('active-section'));
+
+      // Get target section
+      const id = link.getAttribute('href').replace('#', '');
+      const target = document.getElementById(id);
+      
+      if (target) {
+        target.classList.add('active-section');
+      }
+    });
+  });
+
+
+
+
+
+  </script>
+</body>
+</html>
